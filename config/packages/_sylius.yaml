@@ -1,13 +1,8 @@
 imports:
     - { resource: "@SyliusCoreBundle/Resources/config/app/config.yml" }
-
     - { resource: "@SyliusAdminBundle/Resources/config/app/config.yml" }
-
     - { resource: "@SyliusShopBundle/Resources/config/app/config.yml" }
-
     - { resource: "@SyliusApiBundle/Resources/config/app/config.yaml" }
-
-    - { resource: "@SyliusPayPalPlugin/Resources/config/config.yaml" }
 
 parameters:
     fixtures_dir: "%kernel.project_dir%/src/Resources/fixtures"

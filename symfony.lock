@@ -220,21 +220,6 @@
     "knplabs/knp-menu-bundle": {
         "version": "v2.2.1"
     },
-    "knplabs/knp-snappy": {
-        "version": "v1.1.0"
-    },
-    "knplabs/knp-snappy-bundle": {
-        "version": "1.5",
-        "recipe": {
-            "repo": "github.com/symfony/recipes-contrib",
-            "branch": "master",
-            "version": "1.5",
-            "ref": "c81bdcf4a9d4e7b1959071457f9608631865d381"
-        },
-        "files": [
-            "config/packages/knp_snappy.yaml"
-        ]
-    },
     "lakion/mink-debug-extension": {
         "version": "v1.2.3"
     },
@@ -358,18 +343,6 @@
     },
     "phar-io/version": {
         "version": "1.0.1"
-    },
-    "php-http/discovery": {
-        "version": "1.19",
-        "recipe": {
-            "repo": "github.com/symfony/recipes",
-            "branch": "main",
-            "version": "1.18",
-            "ref": "f45b5dd173a27873ab19f5e3180b2f661c21de02"
-        },
-        "files": [
-            "config/packages/http_discovery.yaml"
-        ]
     },
     "php-http/guzzle6-adapter": {
         "version": "v1.1.1"
@@ -568,19 +541,6 @@
     },
     "sylius/grid-bundle": {
         "version": "v1.4.4"
-    },
-    "sylius/invoicing-plugin": {
-        "version": "0.5",
-        "recipe": {
-            "repo": "github.com/symfony/recipes-contrib",
-            "branch": "master",
-            "version": "0.5",
-            "ref": "4720bdeb3db9f81932523a640184244cf75da7f0"
-        },
-        "files": [
-            "config/packages/sylius_invoicing.yaml",
-            "config/routes/sylius_invoicing.yaml"
-        ]
     },
     "sylius/mailer-bundle": {
         "version": "v1.7.1"
