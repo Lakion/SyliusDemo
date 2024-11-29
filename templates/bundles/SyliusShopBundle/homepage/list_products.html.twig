@@ -4,7 +4,7 @@
     <div {{ sylius_test_html_attribute(hookable_metadata.configuration.test_attribute|default('latest-products')) }}>
         <div class="products-grid">
             {% for product in latest_products %}
-                <div>{{ component('sylius_shop:product:card', { product: product, template: '@SyliusShop/homepage/product_card.html.twig' }) }}</div>
+                <div>{{ component('sylius_shop:product:card', { key: loop.index, product: product, template: '@SyliusShop/homepage/card_products.html.twig' }) }}</div>
             {% endfor %}
         </div>
     </div>

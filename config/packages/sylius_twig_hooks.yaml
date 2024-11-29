@@ -58,7 +58,7 @@ sylius_twig_hooks:
                 component: 'sylius_shop:product:list'
                 props:
                     limit: 4
-                    template: '@SyliusShop/product/common/list.html.twig'
+                    template: '@SyliusShop/homepage/list_deals.html.twig'
                 configuration:
                     title: 'sylius.homepage.latest_deals'
                     test_attribute: 'latest-deals'
@@ -67,6 +67,5 @@ sylius_twig_hooks:
                 component: 'sylius_shop:product:list'
                 props:
                     limit: 8
-                    template: '@SyliusShop/homepage/latest_products.html.twig'
+                    template: '@SyliusShop/homepage/list_products.html.twig'
                 priority: 0
-
