@@ -1,0 +1,53 @@
+<style>
+    .version-warning {
+        position: fixed!important;
+        top: 30px;
+        left: 20px;
+        right: 20px;
+        text-align: center;
+        z-index: 1000;
+    }
+</style>
+
+<div class="ui container version-warning">
+    <div data-js-version-warning class="ui warning message">
+        <i class="close icon" data-js-version-warning-close></i>
+        <div class="header">
+            Warning
+        </div>
+        <p>This demo is based on Sylius 1.x. We strongly encourage you to check <a href="https://v2.demo.sylius.com/en_US/">the latest Sylius 2.0 demo</a> and upgrade your applications!</p>
+    </div>
+</div>
+
+<script type="text/javascript">
+    class VersionWarning {
+        constructor() {
+            this.setupTime = localStorage.getItem('setupTime');
+            this.warningBox = document.querySelector('[data-js-version-warning]');
+            this.warningClose = document.querySelector('[data-js-version-warning-close]');
+            this.hours = 1;
+
+            this.checkTime();
+
+            this.warningClose.addEventListener('click', this.saveTime.bind(this));
+        }
+
+        checkTime() {
+            const now = new Date().getTime();
+
+            if (this.setupTime !== null) {
+                if (now - this.setupTime < this.hours*60*60*1000) {
+                    this.warningBox.classList.add('hidden');
+                }
+            }
+        }
+
+        saveTime() {
+            const now = new Date().getTime();
+
+            localStorage.setItem('setupTime', now);
+        }
+    }
+
+    const versionWarning = new VersionWarning();
+</script>

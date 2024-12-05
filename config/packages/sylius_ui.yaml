@@ -5,6 +5,9 @@ sylius_ui:
                 after_menu:
                     template: "Blocks/_infoBox.html.twig"
                     priority: 12
+                new_version_box:
+                    template: "Blocks/_newVersionBox.html.twig"
+                    priority: 11
         sylius.shop.layout.head:
             blocks:
                 analistics:
