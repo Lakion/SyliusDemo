@@ -69,3 +69,8 @@ sylius_twig_hooks:
                     limit: 8
                     template: '@SyliusShop/homepage/list_products.html.twig'
                 priority: 0
+        'sylius_shop.base.footer.content':
+            payment_methods:
+                template: 'payment_methods.html.twig'
+                priority: 100
+
