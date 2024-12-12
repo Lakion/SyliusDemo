@@ -66,4 +66,5 @@ return [
     FriendsOfBehat\SymfonyExtension\Bundle\FriendsOfBehatSymfonyExtensionBundle::class => ['test' => true],
     FOS\RestBundle\FOSRestBundle::class => ['all' => true],
     Sylius\PayPalPlugin\SyliusPayPalPlugin::class => ['all' => true],
+    Sylius\RefundPlugin\SyliusRefundPlugin::class => ['all' => true],
 ];
