@@ -1,9 +1,9 @@
 sylius_invoicing_plugin_admin:
-    resource: "@SyliusInvoicingPlugin/config/admin_routes.yaml"
+    resource: "@SyliusInvoicingPlugin/config/routes/admin.yaml"
     prefix: /admin
 
 sylius_invoicing_plugin_shop:
-    resource: "@SyliusInvoicingPlugin/config/shop_routes.yaml"
+    resource: "@SyliusInvoicingPlugin/config/routes/shop.yaml"
     prefix: /{_locale}
     requirements:
         _locale: ^[a-z]{2}(?:_[A-Z]{2})?$
