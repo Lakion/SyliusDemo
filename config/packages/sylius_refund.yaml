@@ -1,2 +1,2 @@
 imports:
-    - { resource: "@SyliusRefundPlugin/config/app/config.yml" }
+    - { resource: "@SyliusRefundPlugin/config/config.yaml" }
