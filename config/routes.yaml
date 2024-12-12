@@ -1,2 +1,2 @@
 sylius_paypal_webhook:
-  resource: "@SyliusPayPalPlugin/config/webhook_routing.yaml"
+  resource: "@SyliusPayPalPlugin/config/routes/webhook.yaml"

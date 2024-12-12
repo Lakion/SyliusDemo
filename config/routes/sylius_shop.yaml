@@ -17,7 +17,7 @@ sylius_payment_notify:
     resource: "@SyliusPaymentBundle/Resources/config/routing/integrations/sylius.yaml"
 
 sylius_paypal_shop:
-    resource: "@SyliusPayPalPlugin/config/shop_routing.yaml"
+    resource: "@SyliusPayPalPlugin/config/routes/shop.yaml"
     prefix: /{_locale}
     requirements:
         _locale: ^[A-Za-z]{2,4}(_([A-Za-z]{4}|[0-9]{3}))?(_([A-Za-z]{2}|[0-9]{3}))?$
