@@ -17,9 +17,15 @@ sylius_ui:
             blocks:
                 info_box:
                     template: "Blocks/_infoBox.html.twig"
+                    priority: 10
+                new_version_box:
+                    template: "Blocks/_newVersionBox.html.twig"
                     priority: 0
         sylius.admin.layout.topbar_right:
             blocks:
                 info_box:
                     template: "Blocks/_infoBox.html.twig"
+                    priority: 10
+                new_version_box:
+                    template: "Blocks/_newVersionBox.html.twig"
                     priority: 0
