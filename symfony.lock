@@ -220,6 +220,18 @@
     "knplabs/knp-menu-bundle": {
         "version": "v2.2.1"
     },
+    "knplabs/knp-snappy-bundle": {
+        "version": "1.10",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "main",
+            "version": "1.5",
+            "ref": "c81bdcf4a9d4e7b1959071457f9608631865d381"
+        },
+        "files": [
+            "config/packages/knp_snappy.yaml"
+        ]
+    },
     "lakion/mink-debug-extension": {
         "version": "v1.2.3"
     },
@@ -293,9 +305,6 @@
     "myclabs/deep-copy": {
         "version": "1.8.1"
     },
-    "myclabs/php-enum": {
-        "version": "1.7.4"
-    },
     "namshi/jose": {
         "version": "7.2.3"
     },
@@ -325,9 +334,6 @@
     },
     "pagerfanta/pagerfanta": {
         "version": "v2.0.1"
-    },
-    "paragonie/random_compat": {
-        "version": "v2.0.17"
     },
     "payum/iso4217": {
         "version": "1.0.1"
@@ -554,6 +560,19 @@
     "sylius/grid-bundle": {
         "version": "v1.4.4"
     },
+    "sylius/invoicing-plugin": {
+        "version": "1.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "main",
+            "version": "1.0",
+            "ref": "d5c2fd325a1c407a6647a2cfe4be4589a3c791c4"
+        },
+        "files": [
+            "config/packages/sylius_invoicing.yaml",
+            "config/routes/sylius_invoicing.yaml"
+        ]
+    },
     "sylius/mailer-bundle": {
         "version": "v1.7.1"
     },
@@ -561,10 +580,10 @@
         "version": "v1.0.0-rc.1"
     },
     "sylius/refund-plugin": {
-        "version": "0.4",
+        "version": "1.6",
         "recipe": {
             "repo": "github.com/symfony/recipes-contrib",
-            "branch": "master",
+            "branch": "main",
             "version": "0.4",
             "ref": "a3f813f608c6f04bd7d0b4cefd73a96bf378c390"
         },
