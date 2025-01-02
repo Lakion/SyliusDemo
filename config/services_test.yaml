@@ -2,6 +2,7 @@ imports:
     - { resource: "../tests/Behat/Resources/config/services.xml" }
     - { resource: "../vendor/sylius/calendar/tests/Behat/Resources/services.yaml" }
     - { resource: "../vendor/sylius/sylius/src/Sylius/Behat/Resources/config/services.xml" }
+    - { resource: "../vendor/sylius/invoicing-plugin/tests/Behat/Resources/services.xml" }
 
 # workaround needed for strange "test.client.history" problem
 # see https://github.com/FriendsOfBehat/SymfonyExtension/issues/88

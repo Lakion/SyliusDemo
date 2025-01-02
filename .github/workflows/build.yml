@@ -22,6 +22,7 @@ jobs:
                 symfony: ["^6.4"]
                 node: ["20.x"]
                 mysql: ["8.0"]
+                wkhtmltopdf: ["0.12.6.1-2"]
 
         env:
             APP_ENV: test
@@ -63,8 +64,8 @@ jobs:
                 name: Install wkthtmltopdf
                 run: |
                     sudo apt-get install -y xfonts-base xfonts-75dpi
-                    wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.focal_amd64.deb
-                    sudo dpkg -i wkhtmltox_0.12.6-1.focal_amd64.deb
+                    wget https://github.com/wkhtmltopdf/packaging/releases/download/${{ matrix.wkhtmltopdf }}/wkhtmltox_${{ matrix.wkhtmltopdf }}.jammy_amd64.deb
+                    sudo dpkg -i wkhtmltox_${{ matrix.wkhtmltopdf }}.jammy_amd64.deb
 
             -
                 name: Output PHP version for Symfony CLI

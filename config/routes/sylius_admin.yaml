@@ -5,3 +5,7 @@ sylius_admin:
 sylius_paypal_admin:
     resource: "@SyliusPayPalPlugin/Resources/config/admin_routing.yml"
     prefix: /admin
+
+sylius_invoicing_admin:
+    resource: "@SyliusInvoicingPlugin/config/admin_routes.yaml"
+    prefix: /admin
