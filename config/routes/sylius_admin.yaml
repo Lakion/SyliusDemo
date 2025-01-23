@@ -7,5 +7,5 @@ sylius_paypal_admin:
     prefix: /admin
 
 sylius_invoicing_admin:
-    resource: "@SyliusInvoicingPlugin/config/admin_routes.yaml"
+    resource: "@SyliusInvoicingPlugin/config/routes.admin.yaml"
     prefix: /admin
