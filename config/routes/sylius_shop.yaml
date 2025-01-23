@@ -20,4 +20,4 @@ sylius_paypal:
         _locale: ^[A-Za-z]{2,4}(_([A-Za-z]{4}|[0-9]{3}))?(_([A-Za-z]{2}|[0-9]{3}))?$
 
 sylius_invoicing:
-    resource: "@SyliusInvoicingPlugin/config/shop_routes.yaml"
+    resource: "@SyliusInvoicingPlugin/config/routes/shop.yaml"
